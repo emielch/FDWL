@@ -5,13 +5,19 @@
 
 
 void setup() {
-  // put your setup code here, to run once:
-  for (int i = 0; i < sizeof(leds) / sizeof(LED); i++) {
-    Serial.println(leds[i].xPos);
-  }
+
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
+  reset_ledLib();
 
+  render();
+  
+  show_ledLib();
 }
+
+
+void render(){
+  
+}
+

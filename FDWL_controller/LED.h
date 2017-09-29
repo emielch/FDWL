@@ -13,12 +13,18 @@ class LED{
       yPos = _yPos;
     }
 
-    void draw(){
-      
+    void addColor(Color c){
+      Color currCol = getColor();
+      currCol.add(c);
+      setColor(currCol);
     }
 
-    void sedColor(Color c){
+    void setColor(Color c){
       set_ledLib(channel*ledsPerStrip+ledID, c.red(),c.green(),c.blue());
+    }
+
+    Color getColor(){
+      return get_ledLib(channel*ledsPerStrip+ledID);
     }
 };
 
