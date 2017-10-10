@@ -1,3 +1,5 @@
+#define pixelsPerMeter 267
+
 LED leds[] = {
   LED(0, 0, 79, 152),
   /*LED(0, 1, 77, 152),

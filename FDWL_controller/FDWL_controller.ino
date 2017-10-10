@@ -1,9 +1,11 @@
 #include "Color.h"
 #include "ledLibSetup.h"
-#include "Edge.h"
-#include "Pulse.h"
 #include "LED.h"
+#include "Edge.h"
 #include "ledLayout.h"
+#include "Pulse.h"
+
+#define FrameRate 60
 
 void setup() {
 
